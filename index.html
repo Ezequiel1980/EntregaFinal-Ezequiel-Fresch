@@ -1,57 +1,153 @@
 <!DOCTYPE html>
-<html lang="en" >
-  
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verde Deco Lighting</title>
-    <link rel="stylesheet" href="css/main.css">
-    <!-- Icono web explorador -->
-    <link rel="icon" href="img/logo solo.png">
-    <!-- Fuentes google -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Estilos Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Icono web explorador -->
+  <link rel="icon" href="img/logo solo.png">
+  <!-- Fuentes google -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap"
+    rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Titulo de la Web -->
+  <title>Verde Deco Lighting</title>
 
 </head>
 
 <body>
   <header>
     <div>
-    <a href="index.html" class="home-logo">
+      <a href="index.html" class="home-logo">
         <img src="img/logo completo.png" alt="logo" style="width: 200px;">
-    </a>
-  </div>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="pages/productos.html">Productos</a></li>
-      <li><a href="pages/ofertas.html">Ofertas</a></li>
-      <li><a href="pages/nosotros.html">Nosotros</a></li>
-      <li><a href="pages/contacto.html">Contacto</a></li>
-    </ul>
-    
-  </nav>
-  <main>
-    <div>
-      <img src="https://dummyimage.com/800x500/ffe563/fff.png&text=SLIDE+JS" alt="slide-js">
+      </a>
     </div>
+  </header>
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid ">
+      <button class="navbar-toggler text-white " type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  pb-2 mb-4 border-bottom border-ligth" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class=" text-dark nav-link active" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class=" text-dark nav-link active" href="pages/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-dark nav-link active" href="pages/ofertas.html">Ofertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-dark nav-link active" ref="pages/nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class=" text-dark nav-link active" href="pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slide 1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide-2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide-3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Atras</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+    <div class="division-home">
+      <h3>Productos Destacados</h3>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card text-center" style="width: 18rem">
+            <img src="img/productos/item14.png" class="card-img-top" alt="...">
+            <div class="card-body bg-light">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-warning">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center" style="width: 18rem">
+            <img src="img/productos/item11.png" class="card-img-top" alt="...">
+            <div class="card-body bg-light">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-warning">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center" style="width: 18rem">
+            <img src="img/productos/item13.png" class="card-img-top" alt="...">
+            <div class="card-body bg-light">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-warning">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center" style="width: 18rem">
+            <img src="img/productos/item12.png" class="card-img-top" alt="...">
+            <div class="card-body bg-light">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-warning">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
-  <footer >
+  <footer>
     <div class="redes">
       <ul>
-        <li><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class='bx bxl-facebook-circle' ></i></a></li>
-        <li><a href="https://www.instagram.com/" target="_blank" class="instagram"><i class='bx bxl-instagram-alt' ></i></a></li>
-        <li><a href="https://web.whatsapp.com/" target="_blank" class="whatsapp"><i class='bx bxl-whatsapp' ></i></a></li>
-     
+        <li><a href="https://www.instagram.com/" target="_blank" class="instagram"><i
+              class='bx bxl-instagram-alt'></i></a></li>
+        <li><a href="https://web.whatsapp.com/" target="_blank" class="whatsapp"><i class='bx bxl-whatsapp'></i></a>
+        </li>
+        <li><a href="https://www.facebook.com/" target="_blank" class="facebook"><i
+              class='bx bxl-facebook-circle'></i></a></li>
       </ul>
     </div>
-   
-    <p >Copyright  ®2022 Verde Deco Lighting </p>
-
- </footer>
+    <p>Copyright ®2022 Verde Deco Lighting </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
