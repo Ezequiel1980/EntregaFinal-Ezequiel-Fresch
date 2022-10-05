@@ -15,7 +15,7 @@ header{
    padding: 15px 15px;
 }
 main {
-   padding: 0 15px
+   padding: 15px 15px;
 }
 
 
@@ -96,6 +96,39 @@ footer p {
 .redes ul li .whatsapp:hover {
    background: var(--whatsapp);
 }
+/* Productos */
+.main-productos{
+   padding-bottom: 10px;
+}
+.productos{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   text-align: center;
+}
+.card {
+   width: 16rem;
+}
+.description {
+    
+   font-family: sans-serif;
+   background-color: #cdcccc46;
+   padding: 20px 0px;
+}
+.precio {
+   margin:0 20% ;
+   border-radius: 15px;
+   width: 60%;
+   background-color: rgba(8, 153, 3, 0.651);
+   color: #fff;
+}
+.boton-compra {
+   padding: 5px 5px;
+   border-radius: 5px;
+   border: 0;
+   background-color: #ffd500;
+}
 
 
 /* Hover en menu y productos */
@@ -119,27 +152,21 @@ nav ul li a:hover {
 /* responsive */
 @media screen and (max-width: 767px) {
    .card:hover {
-      transform: none;
-      
+      transform: none; 
    }
    
    nav ul li:hover {
-      transform: none;
-     
-      
+      transform: none;  
    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
    .card:hover {
       transform: none;
-      
    }
    
    nav ul li:hover {
       transform: none;
-     
-      
    }
 }
 
@@ -148,4 +175,3 @@ nav ul li a:hover {
 
 @media screen and (min-width: 1920px) {}
 
-/* Contacto */
