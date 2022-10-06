@@ -224,6 +224,7 @@ h1 {
 
 /* Contacto */
 .contact {
+   margin: 0;
    display: flex;
    flex-direction: row-reverse;
    justify-content: space-evenly;
@@ -258,6 +259,7 @@ h3 {
    
 }
 
+
 /* Hover en menu y productos */
 .card:hover {
    transform: scale(1.05);
@@ -276,7 +278,7 @@ nav ul li a:hover {
 }
 
 /* responsive */
-@media screen and (min-width: 400px) and (max-width: 767px) {
+@media screen and (min-width: 420px) and (max-width: 767px) {
    .card:hover {
       transform: none;
    }
@@ -311,6 +313,22 @@ nav ul li a:hover {
    h3 {
       margin-left: 25px;
    }
+   .form li {
+      padding-left: 150px;
+      text-align: start;
+   
+   }
+   .contact-list {
+      margin-left: 0;
+      padding-left: 5px;
+   }
+   
+   .contact-list ul li {
+      padding-left: 110px;
+      text-align: start;
+      
+   }
+  
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
