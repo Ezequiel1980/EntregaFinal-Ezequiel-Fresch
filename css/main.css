@@ -155,7 +155,7 @@ footer p {
 }
 
 .img-offer {
-   width: 100%
+   width: 100%;
 }
 
 .offer-1 {
@@ -259,6 +259,7 @@ nav ul li a:hover {
    .img {
       width: 400px;
    }
+
    .contact {
       display: flex;
       flex-direction: column-reverse;
@@ -277,6 +278,7 @@ nav ul li a:hover {
       width: 185px;
       height: 100px;
    }
+
    h3 {
       margin-left: 25px;
    }
@@ -295,7 +297,7 @@ nav ul li a:hover {
       width: 600px;
    }
 
-   
+
 
    .mapa {
       width: 500px;
