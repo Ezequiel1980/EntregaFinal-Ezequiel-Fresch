@@ -278,7 +278,55 @@ nav ul li a:hover {
 }
 
 /* responsive */
-@media screen and (min-width: 420px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
+   .card:hover {
+      transform: none;
+   }
+
+   nav ul li:hover {
+      transform: none;
+   }
+
+   .img {
+      width: 300px;
+   }
+
+   .contact {
+   
+      flex-direction: column-reverse;
+      justify-content: space-evenly;
+      text-align: center;
+
+   }
+
+   .mapa {
+      width: 250px;
+      height: 250px;
+      ;
+   }
+
+   #msg {
+      width: 185px;
+      height: 100px;
+   }
+
+   
+   .form li {
+      padding-left: 10px;
+      text-align: start;
+   
+   }
+   .contact-list ul {
+      text-align: justify;
+      padding: 0;
+   }
+   .contact-list ul li {
+      padding-left: 5px;
+   }
+   
+    
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
    .card:hover {
       transform: none;
    }
@@ -292,7 +340,7 @@ nav ul li a:hover {
    }
 
    .contact {
-      display: flex;
+   
       flex-direction: column-reverse;
       justify-content: space-evenly;
       text-align: center;
@@ -310,23 +358,19 @@ nav ul li a:hover {
       height: 100px;
    }
 
-   h3 {
-      margin-left: 25px;
-   }
+   
    .form li {
-      padding-left: 150px;
+      padding-left: 10px;
       text-align: start;
    
    }
-   .contact-list {
-      margin-left: 0;
-      padding-left: 5px;
+   .contact-list ul {
+      text-align: justify;
+      padding-left: 80px;
+      padding-top: 15px;
    }
-   
    .contact-list ul li {
-      padding-left: 110px;
-      text-align: start;
-      
+      padding-left: 5px;
    }
   
 }
