@@ -22,6 +22,7 @@ main {
 
 
 nav {
+   font-family: 'Oswald', sans-serif;
    margin: 0 5px;
 }
 
@@ -124,7 +125,7 @@ footer p {
 
 .description {
 
-   font-family: sans-serif;
+   font-family: 'Oswald', sans-serif;
    background-color: #cdcccc46;
    padding: 20px 0px;
 }
@@ -151,9 +152,15 @@ footer p {
    grid-template-columns: repeat(2, 1fr);
    grid-gap: 1px;
    text-align: center;
-   position: relative;
+   
 }
-
+h2 {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   text-align: center;
+   padding: 15px 0;
+   border-bottom: 1px solid #cdcccc;
+   border-top: 1px solid #cdcccc;
+}
 .img-offer {
    width: 100%;
 }
@@ -164,6 +171,8 @@ footer p {
    grid-row: 1;
    border: 2px solid rgb(209, 208, 208);
    border-radius: 15px;
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
 }
 
 .offer-2 {
@@ -171,6 +180,8 @@ footer p {
    grid-row: 1;
    border: 2px solid rgb(209, 208, 208);
    border-radius: 15px;
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
 }
 
 .offer-3 {
@@ -178,6 +189,8 @@ footer p {
    margin: 30px 5px;
    border: 2px solid rgb(209, 208, 208);
    border-radius: 15px;
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
 
 }
 
@@ -190,15 +203,23 @@ footer p {
    margin: 0 30px;
    margin-bottom: 30px;
 }
-
+h1 {
+   font-family: 'Radley', serif;
+   text-align: center;
+   color: black;
+}
 .img {
    width: 900px;
 }
 
 .text-nosotros {
+   font-family: 'Radley', serif;
+   font-size: 20px;
+   color: #6d6d6d;
    text-align: justify;
    padding-bottom: 30px;
 }
+
 
 /* Contacto */
 .contact {
@@ -208,25 +229,32 @@ footer p {
    text-align: justify;
 
 }
-
+h3 {
+   font-family: 'Oswald', sans-serif;
+   padding-bottom: 10px;
+   border-bottom: 1px solid #cdcccc;
+}
 .form li {
    list-style-type: none;
 
 }
 
 .contact-list ul li {
+   font-family: 'Oswald', sans-serif;
    list-style-type: none;
-}
-
-.mapa {
-   width: 800px;
-   height: 500px;
-   
 }
 
 #msg {
    width: 185px;
    height: 200px;
+}
+
+.mapa {
+   width: 800px;
+   height: 500px;
+   border: 3px solid #cdcccc;
+   border-radius: 15px;
+   
 }
 
 /* Hover en menu y productos */
@@ -314,7 +342,13 @@ nav ul li a:hover {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1919px) {
-
+   .nosotros {
+      flex-direction: row-reverse;
+      align-content: center;
+      align-items: center;
+      margin: 0 30px;
+      margin-bottom: 30px;
+   }   
    .text-nosotros {
       padding: 0 100px;
    }
