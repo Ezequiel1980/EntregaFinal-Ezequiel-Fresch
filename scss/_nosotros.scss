@@ -1,0 +1,29 @@
+
+div {
+    .nosotros {
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0 30px;
+        margin-bottom: 30px;
+     }
+     h1 {
+        font-family: 'Radley', serif;
+        text-align: center;
+        color: black;
+     }
+     div .img {
+        object-fit: cover;
+     }
+     
+     .text-nosotros {
+        text-align: center;
+        font-family: 'Radley', serif;
+        font-size: 20px;
+        color: #6d6d6d;
+        text-align: justify;
+        padding-bottom: 30px;
+     }
+}
