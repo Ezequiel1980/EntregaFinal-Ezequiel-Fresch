@@ -1,0 +1,13 @@
+@mixin flex {
+        display: flex;
+        flex-direction: row;
+            
+}
+@mixin boton-compra {
+    width: 40px;
+         padding: 5px 5px;
+         border-radius: 5px;
+         border: 0;
+         background-color: #ffd500;
+
+}

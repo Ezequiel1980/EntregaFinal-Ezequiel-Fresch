@@ -26,11 +26,8 @@
         color: #fff;
      }
      .boton-compra {
-        padding: 5px 5px;
-        border-radius: 5px;
-        border: 0;
-        background-color: #ffd500;
-     }
+      @include boton-compra
+   }
  }
  .card:hover {
     transform: scale(1.05);
