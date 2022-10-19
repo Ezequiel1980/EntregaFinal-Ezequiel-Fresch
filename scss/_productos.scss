@@ -1,46 +1,24 @@
 .main-productos {
-    padding-bottom: 0.8rem;
-    .productos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        text-align: center;
-     }
-     .card {
-        width: 16rem;
-        margin-bottom: 2rem;
-     }
-     
-     .description {
- 
-        font-family: 'Oswald', sans-serif;
-        background-color: #cdcccc46;
-        padding: 20px 0px;
-     }
-     .precio {
-        margin: 0 20%;
-        border-radius: 15px;
-        width: 60%;
-        background-color: rgba(8, 153, 3, 0.651);
-        color: #fff;
-     }
-     .boton-compra {
-      @include boton-compra
+   padding-bottom: 0.8rem;
+
+   .productos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      text-align: center;
    }
- }
- .card:hover {
-    transform: scale(1.05);
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
- }
- 
+   .card-prod {
+      @extend .card;
+      @extend.boton-compra;
+      @extend .precio;
+      @extend .description;
+   }
+   .card-prod:hover {
+      transform: scale(1.05);
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out;
+   }
 
- 
- 
- 
- 
- 
-
- 
- 
+   
+}
